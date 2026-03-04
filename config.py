@@ -47,13 +47,20 @@ def _coins_json_path() -> Path:
     return Path(__file__).parent.parent / "backtest" / "engine_v2" / "coins.json"
 
 
+_coins_cache: dict | None = None
+
+
 def read_coins_json() -> dict:
-    """Read and return the full coins.json content."""
+    """Read and return the full coins.json content (cached after first read)."""
+    global _coins_cache
+    if _coins_cache is not None:
+        return _coins_cache
     p = _coins_json_path()
     if not p.exists():
         return {}
     with open(p, encoding="utf-8") as f:
-        return json.load(f)
+        _coins_cache = json.load(f)
+    return _coins_cache
 
 
 # ---------------------------------------------------------------------------

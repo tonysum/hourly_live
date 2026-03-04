@@ -68,8 +68,9 @@ class BinanceKlineClient:
         limit: int = 100,
         start_time: Optional[int] = None,
         end_time: Optional[int] = None,
+        max_retries: int = 3,
     ) -> list[RawKline]:
-        """Fetch kline/candlestick data.
+        """Fetch kline/candlestick data with retry.
 
         Args:
             symbol: Trading pair symbol (e.g. "ETHUSDT")
@@ -77,6 +78,7 @@ class BinanceKlineClient:
             limit: Number of klines (max 1500)
             start_time: Start timestamp in milliseconds
             end_time: End timestamp in milliseconds
+            max_retries: Number of retry attempts on failure
 
         Returns:
             List of RawKline dataclass objects
@@ -87,19 +89,33 @@ class BinanceKlineClient:
         if end_time:
             params["endTime"] = end_time
 
-        resp = await self.client.get("/fapi/v1/klines", params=params)
-        resp.raise_for_status()
-        data = resp.json()
+        import asyncio
+        last_error = None
+        for attempt in range(max_retries):
+            try:
+                resp = await self.client.get("/fapi/v1/klines", params=params)
+                resp.raise_for_status()
+                data = resp.json()
 
-        return [
-            RawKline(
-                open_time=int(k[0]),
-                open=float(k[1]),
-                high=float(k[2]),
-                low=float(k[3]),
-                close=float(k[4]),
-                volume=float(k[5]),
-                close_time=int(k[6]),
-            )
-            for k in data
-        ]
+                return [
+                    RawKline(
+                        open_time=int(k[0]),
+                        open=float(k[1]),
+                        high=float(k[2]),
+                        low=float(k[3]),
+                        close=float(k[4]),
+                        volume=float(k[5]),
+                        close_time=int(k[6]),
+                    )
+                    for k in data
+                ]
+            except (httpx.HTTPError, httpx.TimeoutException) as e:
+                last_error = e
+                wait = 2 ** attempt  # 1s, 2s, 4s
+                logger.warning(
+                    "⚠️ %s kline fetch failed (attempt %d/%d): %s — retrying in %ds",
+                    symbol, attempt + 1, max_retries, e, wait,
+                )
+                await asyncio.sleep(wait)
+
+        raise last_error  # type: ignore[misc]

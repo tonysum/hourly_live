@@ -119,12 +119,14 @@ class HourlyPaperEngine:
         self,
         initial_capital: float = 10000.0,
         max_positions: int = 1,
+        max_holding_hours: float = 72.0,
         commission_rate: float = DEFAULT_COMMISSION_RATE,
         slippage_pct: float = DEFAULT_SLIPPAGE_PCT,
     ) -> None:
         self.initial_capital = initial_capital
         self.capital = initial_capital
         self.max_positions = max_positions
+        self.max_holding_hours = max_holding_hours
         self.commission_rate = commission_rate
         self.slippage_pct = slippage_pct
 
@@ -220,16 +222,19 @@ class HourlyPaperEngine:
                 triggered = True
 
             if triggered and len(self.open_positions) < self.max_positions:
+                # Recalculate size at fill time (capital may have changed since order)
+                size_usdt = min(order.size_usdt, self.capital * order.invest_ratio)
+
                 # Check capital
-                if self.capital < order.size_usdt:
+                if self.capital < size_usdt:
                     logger.warning(
                         "⚠️ %s: 资金不足 需$%s 可用$%s",
-                        symbol, f"{order.size_usdt:,.0f}", f"{self.capital:,.0f}",
+                        symbol, f"{size_usdt:,.0f}", f"{self.capital:,.0f}",
                     )
                     remaining.append(order)
                     continue
 
-                position_value = order.size_usdt * order.leverage
+                position_value = size_usdt * order.leverage
                 qty = position_value / order.entry_price
 
                 pos = OpenPosition(
@@ -241,18 +246,19 @@ class HourlyPaperEngine:
                     tp_price=order.tp_price,
                     sl_price=order.sl_price,
                     leverage=order.leverage,
-                    size_usdt=order.size_usdt,
+                    size_usdt=size_usdt,
                     position_value=position_value,
                     qty=qty,
+                    max_holding_hours=self.max_holding_hours,
                     _new_this_tick=True,
                 )
                 self.open_positions.append(pos)
-                self.capital -= order.size_usdt
+                self.capital -= size_usdt
                 self._dirty = True
                 logger.info(
                     "✅ 模拟开仓: %s %s [%s] @$%s 杠杆:%dx 金额:$%s",
                     symbol, order.direction.upper(), order.level,
-                    f"{order.entry_price:,.4f}", int(order.leverage), f"{order.size_usdt:,.0f}",
+                    f"{order.entry_price:,.4f}", int(order.leverage), f"{size_usdt:,.0f}",
                 )
             else:
                 remaining.append(order)
@@ -280,33 +286,25 @@ class HourlyPaperEngine:
             exit_price = None
             exit_reason = None
 
+            # Check TP and SL independently
+            hit_tp = hit_sl = False
             if pos.direction == "long":
-                if candle.high >= pos.tp_price:
-                    exit_price = pos.tp_price
-                    exit_reason = "tp"
-                elif candle.low <= pos.sl_price:
-                    exit_price = pos.sl_price
-                    exit_reason = "sl"
+                hit_tp = candle.high >= pos.tp_price
+                hit_sl = candle.low <= pos.sl_price
             else:  # short
-                if candle.low <= pos.tp_price:
-                    exit_price = pos.tp_price
-                    exit_reason = "tp"
-                elif candle.high >= pos.sl_price:
-                    exit_price = pos.sl_price
-                    exit_reason = "sl"
+                hit_tp = candle.low <= pos.tp_price
+                hit_sl = candle.high >= pos.sl_price
 
-            # Same-bar TP+SL → conservative: SL wins
-            if exit_reason is None:
-                hit_tp = hit_sl = False
-                if pos.direction == "long":
-                    hit_tp = candle.high >= pos.tp_price
-                    hit_sl = candle.low <= pos.sl_price
-                else:
-                    hit_tp = candle.low <= pos.tp_price
-                    hit_sl = candle.high >= pos.sl_price
-                if hit_tp and hit_sl:
-                    exit_price = pos.sl_price
-                    exit_reason = "sl"
+            if hit_tp and hit_sl:
+                # Same-bar TP+SL → conservative: SL wins
+                exit_price = pos.sl_price
+                exit_reason = "sl"
+            elif hit_tp:
+                exit_price = pos.tp_price
+                exit_reason = "tp"
+            elif hit_sl:
+                exit_price = pos.sl_price
+                exit_reason = "sl"
 
             # Timeout
             if exit_price is None and pos.max_holding_hours > 0:
@@ -380,6 +378,17 @@ class HourlyPaperEngine:
     # Stats & queries
     # ------------------------------------------------------------------
 
+    def unrealized_pnl(self) -> float:
+        """Calculate unrealized PnL for all open positions (not currently possible
+        without live prices — returns 0 as placeholder)."""
+        # Note: actual calculation requires current market prices via data_collector.
+        # This is called by trader.py which can pass prices if needed.
+        return 0.0
+
+    def get_equity(self) -> float:
+        """Total equity = capital + unrealized PnL."""
+        return self.capital + self.unrealized_pnl()
+
     def get_stats(self) -> dict:
         """Return summary statistics."""
         total = len(self.trade_history)
@@ -388,6 +397,7 @@ class HourlyPaperEngine:
         return {
             "initial_capital": self.initial_capital,
             "current_capital": round(self.capital, 2),
+            "equity": round(self.get_equity(), 2),
             "total_pnl": round(total_pnl, 2),
             "total_pnl_pct": round(total_pnl / self.initial_capital * 100, 2) if self.initial_capital else 0,
             "total_trades": total,

@@ -124,6 +124,12 @@ async def positions():
     if not _trader or not _trader._engine:
         return {"error": "trader not running"}
 
+    def _safe_iso(val) -> str | None:
+        """Serialize datetime or already-string timestamps."""
+        if val is None:
+            return None
+        return val.isoformat() if hasattr(val, "isoformat") else str(val)
+
     open_pos = []
     for p in _trader._engine.open_positions:
         open_pos.append({
@@ -135,7 +141,7 @@ async def positions():
             "sl_price": p.sl_price,
             "size_usdt": p.size_usdt,
             "leverage": p.leverage,
-            "entry_time": p.entry_time.isoformat() if p.entry_time else None,
+            "entry_time": _safe_iso(p.entry_time),
         })
 
     pending = []
@@ -146,7 +152,7 @@ async def positions():
             "level": o.level,
             "entry_price": o.entry_price,
             "size_usdt": o.size_usdt,
-            "created_at": o.created_at.isoformat() if o.created_at else None,
+            "created_at": _safe_iso(o.created_at),
         })
 
     return {"open_positions": open_pos, "pending_orders": pending}

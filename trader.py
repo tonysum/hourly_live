@@ -92,6 +92,7 @@ class HourlyPaperTrader:
         self._engine = HourlyPaperEngine(
             initial_capital=self._initial_capital,
             max_positions=self._max_positions,
+            max_holding_hours=72.0,
         )
         self._store = HourlyPaperStore()
 
@@ -286,7 +287,7 @@ class HourlyPaperTrader:
             # Equity snapshot
             self._store.save_equity_snapshot(
                 capital=self._engine.capital,
-                equity=self._engine.capital,  # TODO: add unrealized PnL
+                equity=self._engine.get_equity(),
                 positions=len(self._engine.open_positions),
             )
 

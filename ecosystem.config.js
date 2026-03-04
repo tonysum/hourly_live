@@ -19,7 +19,7 @@ module.exports = {
     {
       name: "hourly-paper",
       script: pythonBin,
-      args: "-m hourly_live start --now --port 8080",
+      args: "-m hourly_live start --now --port 8080 --max-positions 5",
       cwd: cwd,
       interpreter: "none",
       autorestart: true,
