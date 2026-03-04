@@ -1,0 +1,3952 @@
+{
+  "_templates": {
+    "btc": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 5.4,
+        "confirm": 1.5,
+        "take_profit_pct": 3.5,
+        "leverage": 20,
+        "stop_loss_pct": 3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 6.9,
+        "confirm": 1.1,
+        "take_profit_pct": 3,
+        "leverage": 20,
+        "stop_loss_pct": 3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 5,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 10.1,
+        "confirm": 0.9,
+        "take_profit_pct": 3,
+        "leverage": 20,
+        "stop_loss_pct": 3.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 5.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 17.0,
+        "confirm": 1.5,
+        "take_profit_pct": 3.0,
+        "leverage": 20,
+        "stop_loss_pct": 3.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 12.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 17.0,
+        "take_profit_pct": 28.0,
+        "leverage": 5,
+        "stop_loss_pct": 17.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "eth": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "sol": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 4.8,
+        "take_profit_pct": 6.3,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.8,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 10.3,
+        "take_profit_pct": 20.3,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.5
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 25.0,
+        "confirm": 5.7,
+        "take_profit_pct": 1.7,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.6,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 7.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 35.0,
+        "confirm": 2.4,
+        "take_profit_pct": 3.6,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.6,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 20.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.6,
+        "take_profit_pct": 1.3,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "solr1_original": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 4.5,
+        "take_profit_pct": 3.0,
+        "leverage": 20,
+        "stop_loss_pct": 4.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 3.0,
+        "take_profit_pct": 3.5,
+        "leverage": 20,
+        "stop_loss_pct": 3.0,
+        "invest_ratio": 0.25,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.5
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 25.0,
+        "confirm": 2.5,
+        "take_profit_pct": 3.0,
+        "leverage": 20,
+        "stop_loss_pct": 3.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 7.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 35.0,
+        "confirm": 2.0,
+        "take_profit_pct": 3.0,
+        "leverage": 15,
+        "stop_loss_pct": 3.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 20.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 2.0,
+        "take_profit_pct": 3.0,
+        "leverage": 15,
+        "stop_loss_pct": 4.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "dsx": [
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 35.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 20.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 25.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 7.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.5
+        }
+      },
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "1000PEPEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 36,
+    "consolidation_threshold": 1.8,
+    "note": "Full-cycle WF: cooling:36h consol:1.8% (train+306% WR:7110%, test-45% WR:5862%, score:1.0)",
+    "last_optimized": "2026-02-19",
+    "active": false,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "4USDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "AAVEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 24,
+    "consolidation_threshold": 1.2,
+    "note": "WF 2026-02-21: cooling=24h consol=1.2% lookback=7d (train+258% WR=70%, test+131% WR=72%)",
+    "last_optimized": "2026-02-21",
+    "active": true,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "ARCUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "BASUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "BEATUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "BLESSUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "BNBUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 32,
+    "consolidation_threshold": 1.9000000000000001,
+    "weekly_lookback_days": 15,
+    "note": "WF 2026-02-21: cooling=24h consol=1.2% lookback=14d (train+790% WR=76%, test+1356% WR=77%)",
+    "last_optimized": "2026-02-23",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 1.1,
+        "take_profit_pct": 2.0,
+        "leverage": 18.0,
+        "stop_loss_pct": 1.7,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.5,
+        "take_profit_pct": 18.9,
+        "leverage": 20,
+        "stop_loss_pct": 8.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 17.8,
+        "take_profit_pct": 3.2,
+        "leverage": 17.0,
+        "stop_loss_pct": 4.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 4.3,
+        "take_profit_pct": 5.3,
+        "leverage": 13.0,
+        "stop_loss_pct": 9.7,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 50.1,
+        "take_profit_pct": 62.3,
+        "leverage": 6.0,
+        "stop_loss_pct": 23.6,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "BTCUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 24,
+    "consolidation_threshold": 4.9,
+    "weekly_lookback_days": 8,
+    "note": "WF 2026-02-21: cooling=10h consol=1.2% lookback=5d (train+5525% WR=66%, test+195% WR=60%)",
+    "last_optimized": "2026-02-23",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 3.2,
+        "take_profit_pct": 1.7,
+        "leverage": 20,
+        "stop_loss_pct": 4.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 7.6,
+        "take_profit_pct": 7.4,
+        "leverage": 20,
+        "stop_loss_pct": 3.8,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 23.3,
+        "take_profit_pct": 9.5,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.3,
+        "invest_ratio": 0.15,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 83.0,
+        "take_profit_pct": 29.2,
+        "leverage": 10.0,
+        "stop_loss_pct": 8.7,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 56.4,
+        "take_profit_pct": 97.6,
+        "leverage": 6.0,
+        "stop_loss_pct": 8.4,
+        "invest_ratio": 0.1,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "CLOUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "COAIUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "COLLECTUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "CYSUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "DOGEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.2,
+    "weekly_lookback_days": 10,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "WF 2026-02-27: cooling=20h consol=1.2% lookback=10d (train+378% WR=82%, test-5% WR=62%)",
+    "last_optimized": "2026-02-27",
+    "active": true,
+    "amplitude_levels": "eth"
+  },
+  "DOTUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 48,
+    "consolidation_threshold": 2.0,
+    "note": "Full-cycle WF: cooling:48h consol:2.0% (train+798% WR:6700%, test-23% WR:6531%, score:1.0)",
+    "last_optimized": "2026-02-19",
+    "active": false,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "ESPUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "ETHUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 4,
+    "consolidation_threshold": 3.6,
+    "weekly_lookback_days": 8,
+    "note": "WF 2026-02-20: cooling=20h consol=1.5% lookback=5d (train+2479% WR=77%, test+208% WR=86%)",
+    "last_optimized": "2026-02-23",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 1.8,
+        "take_profit_pct": 8.7,
+        "leverage": 20,
+        "stop_loss_pct": 5.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.9,
+        "take_profit_pct": 5.6,
+        "leverage": 20,
+        "stop_loss_pct": 2.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 3.6,
+        "take_profit_pct": 3.1,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 17.3,
+        "take_profit_pct": 10.6,
+        "leverage": 9.0,
+        "stop_loss_pct": 8.5,
+        "invest_ratio": 0.05,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 39.2,
+        "take_profit_pct": 66.9,
+        "leverage": 3.0,
+        "stop_loss_pct": 9.0,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "EVAAUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "FHEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "FOLKSUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "GIGGLEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "HUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "JELLYJELLYUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "LABUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "LIGHTUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "LTCUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 24,
+    "consolidation_threshold": 1.0,
+    "weekly_lookback_days": 7,
+    "note": "WF 2026-02-21: cooling=24h consol=1.0% lookback=7d (train+1594% WR=63%, test+99% WR=66%)",
+    "last_optimized": "2026-02-21",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "MYXUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "NAORISUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "PIEVERSEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "PIPPINUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "POLUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 36,
+    "consolidation_threshold": 1.8,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "WF 2026-02-28: cooling=36h consol=1.8% lookback=7d (train+364% WR=69%, test+116% WR=65%)",
+    "last_optimized": "2026-02-28",
+    "active": true,
+    "amplitude_levels": "eth"
+  },
+  "POWERUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "PTBUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "QUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "RAVEUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "RIVERUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "RVVUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "SOLUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 30,
+    "consolidation_threshold": 3.3,
+    "weekly_lookback_days": 14,
+    "note": "WF 2026-02-22: cooling=15h consol=0.8% lookback=14d (train+308% WR=61%, test+38% WR=56%)",
+    "last_optimized": "2026-02-23",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 1.9,
+        "take_profit_pct": 3.4,
+        "leverage": 16.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.4,
+        "take_profit_pct": 17.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 3.8,
+        "invest_ratio": 0.1,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 3.9,
+        "take_profit_pct": 3.8,
+        "leverage": 18.0,
+        "stop_loss_pct": 8.0,
+        "invest_ratio": 0.15,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.5,
+        "take_profit_pct": 4.7,
+        "leverage": 16.0,
+        "stop_loss_pct": 5.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 66.6,
+        "take_profit_pct": 22.6,
+        "leverage": 4.0,
+        "stop_loss_pct": 20.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "SUIUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 5,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 10,
+    "note": "WF 2026-02-21: cooling=5h consol=1.5% lookback=10d (train+1623% WR=83%, test+653% WR=75%)",
+    "last_optimized": "2026-02-21",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "TRUTHUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "UNIUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 36,
+    "consolidation_threshold": 1.0,
+    "note": "WF 2026-02-20: cooling=36h consol=1.0% lookback=10d (train+654% WR=73%, test+61% WR=73%)",
+    "last_optimized": "2026-02-20",
+    "active": false,
+    "weekly_lookback_days": 10,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "USELESSUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 20,
+    "consolidation_threshold": 1.5,
+    "weekly_lookback_days": 7,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 12.8,
+        "take_profit_pct": 18.0,
+        "leverage": 15.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.3,
+        "take_profit_pct": 12.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 4.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 2.5,
+        "take_profit_pct": 11.1,
+        "leverage": 20.0,
+        "stop_loss_pct": 3.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 6.2,
+        "take_profit_pct": 3.0,
+        "leverage": 20.0,
+        "stop_loss_pct": 2.5,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 3.2,
+        "take_profit_pct": 10.2,
+        "leverage": 15.0,
+        "stop_loss_pct": 5.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ],
+    "note": "Added via CLI. Pending WF optimization.",
+    "last_optimized": "2026-03-02",
+    "active": true
+  },
+  "XMRUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 10,
+    "consolidation_threshold": 1.2,
+    "note": "Full-cycle WF: cooling:10h consol:1.2% (train+438% WR:6480%, test-88% WR:4565%, score:1.5)",
+    "last_optimized": "2026-02-19",
+    "active": false,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "XRPUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 28,
+    "consolidation_threshold": 1.7000000000000002,
+    "weekly_lookback_days": 9,
+    "note": "WF 2026-02-21: cooling=20h consol=1.8% lookback=7d (train+910% WR=72%, test+545% WR=70%)",
+    "last_optimized": "2026-02-23",
+    "active": true,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 5.5,
+        "take_profit_pct": 36.3,
+        "leverage": 20,
+        "stop_loss_pct": 2.4,
+        "invest_ratio": 0.15,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 2.9,
+        "take_profit_pct": 13.8,
+        "leverage": 20,
+        "stop_loss_pct": 3.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 8.8,
+        "take_profit_pct": 4.5,
+        "leverage": 20,
+        "stop_loss_pct": 4.8,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 2.8,
+        "take_profit_pct": 21.0,
+        "leverage": 20,
+        "stop_loss_pct": 2.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 120.9,
+        "take_profit_pct": 208.3,
+        "leverage": 18.0,
+        "stop_loss_pct": 4.6,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  },
+  "ZECUSDT": {
+    "model": "hourly",
+    "strategy": "eth",
+    "cooling_period_hours": 15,
+    "consolidation_threshold": 1.5,
+    "note": "Full-cycle WF: cooling:15h consol:1.5% (train+789% WR:6950%, test-10% WR:7000%, score:1.5)",
+    "last_optimized": "2026-02-19",
+    "active": false,
+    "levels": [
+      {
+        "key": "micro",
+        "name": "微幅",
+        "amplitude": 8.0,
+        "confirm": 0.8,
+        "take_profit_pct": 3.7,
+        "leverage": 18.0,
+        "stop_loss_pct": 3.3,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "small",
+        "name": "小幅",
+        "amplitude": 12.0,
+        "confirm": 1.5,
+        "take_profit_pct": 12.1,
+        "leverage": 12.0,
+        "stop_loss_pct": 4.2,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": {
+          "count": 3,
+          "amp": 3.0
+        }
+      },
+      {
+        "key": "medium",
+        "name": "中幅",
+        "amplitude": 18.0,
+        "confirm": 7.4,
+        "take_profit_pct": 1.6,
+        "leverage": 10.0,
+        "stop_loss_pct": 7.9,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": 6.0,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "large",
+        "name": "大幅",
+        "amplitude": 25.0,
+        "confirm": 8.2,
+        "take_profit_pct": 6.7,
+        "leverage": 8.0,
+        "stop_loss_pct": 10.1,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": 15.0,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      },
+      {
+        "key": "huge",
+        "name": "巨幅",
+        "amplitude": 45.0,
+        "confirm": 37.1,
+        "take_profit_pct": 35.2,
+        "leverage": 3.0,
+        "stop_loss_pct": 16.4,
+        "invest_ratio": 0.2,
+        "daily_amp_threshold": null,
+        "hourly_amp_threshold": null,
+        "hourly_count_threshold": null
+      }
+    ]
+  }
+}
