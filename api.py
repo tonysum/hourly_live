@@ -168,6 +168,7 @@ async def positions():
             "tp_price": p.tp_price,
             "sl_price": p.sl_price,
             "size_usdt": p.size_usdt,
+            "qty": p.qty,
             "leverage": p.leverage,
             "entry_time": _safe_iso(p.entry_time),
             "unrealized_pnl": unrealized_pnl,

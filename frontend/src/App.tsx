@@ -194,7 +194,8 @@ export default function App() {
                   <th>TP</th>
                   <th>SL</th>
                   <th>PnL</th>
-                  <th>Size</th>
+                  <th>Margin</th>
+                  <th>Qty</th>
                   <th>Lev</th>
                   <th>Hold</th>
                 </tr>
@@ -215,6 +216,7 @@ export default function App() {
                         : '—'}
                     </td>
                     <td>{formatUSD(p.size_usdt, 0)}</td>
+                    <td>{p.qty.toFixed(2)}</td>
                     <td>{p.leverage}x</td>
                     <td>{p.hold_hours != null ? (p.hold_hours >= 24 ? `${(p.hold_hours / 24).toFixed(1)}d` : `${p.hold_hours.toFixed(0)}h`) : '—'}</td>
                   </tr>

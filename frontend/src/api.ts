@@ -61,6 +61,7 @@ export interface Position {
     tp_price: number;
     sl_price: number;
     size_usdt: number;
+    qty: number;
     leverage: number;
     entry_time: string | null;
     unrealized_pnl: number | null;
