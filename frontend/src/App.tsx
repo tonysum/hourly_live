@@ -190,10 +190,13 @@ export default function App() {
                   <th>Dir</th>
                   <th>Level</th>
                   <th>Entry</th>
+                  <th>Price</th>
                   <th>TP</th>
                   <th>SL</th>
+                  <th>PnL</th>
                   <th>Size</th>
                   <th>Lev</th>
+                  <th>Hold</th>
                 </tr>
               </thead>
               <tbody>
@@ -203,10 +206,17 @@ export default function App() {
                     <td><span className={`badge ${p.direction}`}>{p.direction}</span></td>
                     <td>{p.level}</td>
                     <td>${formatPrice(p.entry_price)}</td>
+                    <td>{p.current_price != null ? `$${formatPrice(p.current_price)}` : '—'}</td>
                     <td className="positive">${formatPrice(p.tp_price)}</td>
                     <td className="negative">${formatPrice(p.sl_price)}</td>
+                    <td className={p.unrealized_pnl != null ? (p.unrealized_pnl >= 0 ? 'positive' : 'negative') : ''}>
+                      {p.unrealized_pnl != null
+                        ? `${p.unrealized_pnl >= 0 ? '+' : ''}${formatUSD(p.unrealized_pnl)} (${p.unrealized_pnl_pct! >= 0 ? '+' : ''}${p.unrealized_pnl_pct!.toFixed(1)}%)`
+                        : '—'}
+                    </td>
                     <td>{formatUSD(p.size_usdt, 0)}</td>
                     <td>{p.leverage}x</td>
+                    <td>{p.hold_hours != null ? (p.hold_hours >= 24 ? `${(p.hold_hours / 24).toFixed(1)}d` : `${p.hold_hours.toFixed(0)}h`) : '—'}</td>
                   </tr>
                 ))}
               </tbody>

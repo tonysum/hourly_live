@@ -130,18 +130,49 @@ async def positions():
             return None
         return val.isoformat() if hasattr(val, "isoformat") else str(val)
 
+    now = datetime.now(timezone.utc)
+
     open_pos = []
     for p in _trader._engine.open_positions:
+        # Current price from cached 1H bars
+        cur_price = None
+        unrealized_pnl = None
+        unrealized_pnl_pct = None
+        if _trader._collector:
+            cur_price = _trader._collector.get_current_price(p.symbol)
+        if cur_price is not None:
+            if p.direction == "long":
+                price_pct = (cur_price - p.entry_price) / p.entry_price * 100
+            else:
+                price_pct = (p.entry_price - cur_price) / p.entry_price * 100
+            unrealized_pnl_pct = round(price_pct * p.leverage, 2)
+            unrealized_pnl = round(p.size_usdt * price_pct * p.leverage / 100, 2)
+
+        # Hold time
+        hold_hours = None
+        if p.entry_time:
+            try:
+                entry_dt = datetime.fromisoformat(str(p.entry_time))
+                if entry_dt.tzinfo is None:
+                    entry_dt = entry_dt.replace(tzinfo=timezone.utc)
+                hold_hours = round((now - entry_dt).total_seconds() / 3600, 1)
+            except (ValueError, TypeError):
+                pass
+
         open_pos.append({
             "symbol": p.symbol,
             "direction": p.direction,
             "level": p.level,
             "entry_price": p.entry_price,
+            "current_price": cur_price,
             "tp_price": p.tp_price,
             "sl_price": p.sl_price,
             "size_usdt": p.size_usdt,
             "leverage": p.leverage,
             "entry_time": _safe_iso(p.entry_time),
+            "unrealized_pnl": unrealized_pnl,
+            "unrealized_pnl_pct": unrealized_pnl_pct,
+            "hold_hours": hold_hours,
         })
 
     pending = []

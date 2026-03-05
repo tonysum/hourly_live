@@ -57,11 +57,15 @@ export interface Position {
     direction: string;
     level: string;
     entry_price: number;
+    current_price: number | null;
     tp_price: number;
     sl_price: number;
     size_usdt: number;
     leverage: number;
     entry_time: string | null;
+    unrealized_pnl: number | null;
+    unrealized_pnl_pct: number | null;
+    hold_hours: number | null;
 }
 
 export interface Order {
