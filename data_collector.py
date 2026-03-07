@@ -50,6 +50,8 @@ class HourlyDataCollector:
         self._initial_bars = initial_bars
         # symbol → list[Candle] ordered by open_time ascending
         self._windows: dict[str, list[Candle]] = {s: [] for s in self.symbols}
+        # Realtime ticker prices (updated every ~30s)
+        self._ticker_prices: dict[str, float] = {}
 
     # ------------------------------------------------------------------
     # Startup — bulk fetch history
@@ -141,6 +143,16 @@ class HourlyDataCollector:
             return None
 
     # ------------------------------------------------------------------
+    # Realtime ticker prices
+    # ------------------------------------------------------------------
+
+    async def fetch_realtime_prices(self) -> None:
+        """Fetch realtime ticker prices for all symbols from Binance API."""
+        prices = await self._client.get_ticker_prices(self.symbols)
+        if prices:
+            self._ticker_prices.update(prices)
+
+    # ------------------------------------------------------------------
     # Query helpers
     # ------------------------------------------------------------------
 
@@ -152,8 +164,13 @@ class HourlyDataCollector:
         return win[-n:] if len(win) >= n else list(win)
 
     def get_current_price(self, symbol: str) -> float | None:
-        """Return the close price of the latest bar, or None."""
-        win = self._windows.get(symbol.upper(), [])
+        """Return realtime ticker price, falling back to latest bar close."""
+        sym = symbol.upper()
+        # Prefer realtime ticker price
+        if sym in self._ticker_prices:
+            return self._ticker_prices[sym]
+        # Fallback to 1H bar close
+        win = self._windows.get(sym, [])
         return win[-1].close if win else None
 
     def get_latest_candle(self, symbol: str) -> Candle | None:

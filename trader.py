@@ -125,12 +125,16 @@ class HourlyPaperTrader:
                 api_task = asyncio.create_task(self._start_api())
                 await asyncio.sleep(0.5)  # Let API server bind
 
+            # Start realtime price refresh loop
+            price_task = asyncio.create_task(self._price_refresh_loop())
+
             # Immediate tick if --now
             if self._run_now:
                 logger.info("⚡ --now: 立即执行一次 tick")
                 await self._run_one_tick()
             await self._hourly_loop()
         finally:
+            price_task.cancel()
             if api_task:
                 api_task.cancel()
             await self.stop()
@@ -252,6 +256,18 @@ class HourlyPaperTrader:
             chunk = min(wait, 10.0)
             await asyncio.sleep(chunk)
             wait -= chunk
+
+    async def _price_refresh_loop(self) -> None:
+        """Background task: refresh ticker prices every 30 seconds."""
+        while self._running:
+            try:
+                if self._collector:
+                    await self._collector.fetch_realtime_prices()
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                logger.debug("Price refresh error: %s", e)
+            await asyncio.sleep(30)
 
     # ------------------------------------------------------------------
     # Signal handling

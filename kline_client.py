@@ -119,3 +119,26 @@ class BinanceKlineClient:
                 await asyncio.sleep(wait)
 
         raise last_error  # type: ignore[misc]
+
+    async def get_ticker_prices(
+        self, symbols: list[str]
+    ) -> dict[str, float]:
+        """Fetch realtime mark prices for multiple symbols.
+
+        Uses the /fapi/v2/ticker/price endpoint.
+        Returns dict of symbol → price.
+        """
+        try:
+            resp = await self.client.get("/fapi/v2/ticker/price")
+            resp.raise_for_status()
+            data = resp.json()
+            sym_set = {s.upper() for s in symbols}
+            return {
+                item["symbol"]: float(item["price"])
+                for item in data
+                if item["symbol"] in sym_set
+            }
+        except Exception as e:
+            logger.warning("⚠️ ticker price fetch failed: %s", e)
+            return {}
+
